@@ -1,0 +1,89 @@
+/* 
+PC: >= 1024px
+Tablet: >= 740px & < 1024px
+Mobile: < 740px
+*/
+
+
+
+/* PC*/
+@media (min-width: 64em) {
+    
+}
+
+/* Tablet and Mobile */
+@media (max-width: 63.9375em) {
+    .nav-item.active {
+        border: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .showcase-section .showcase-box {
+        bottom: -134px;
+    }
+
+    .showcase-section .showcase-list__item {
+        width: 50%;
+    }
+
+    .showcase-section .showcase-list__item--separate:nth-child(2)::after {
+        border: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    /* Header */
+
+    .header {
+        height: 1000px;
+    }
+
+    .header .header-form__control {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .header .header__btn {
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .showcase-section .showcase-box {
+        margin: 0 25px;
+        width: auto;
+        position: unset;
+    }
+
+    .showcase-section .showcase-list__item--separate::after {
+        right: 95px;
+        border-bottom: 1px solid #d4d4d4;
+        border-right: none;
+        width: 80px;
+        top: 35%;
+    }
+
+
+    .featured-list .boat-section {
+        width: 70%;
+    }
+
+    
+
+    .boat-info .boat-info__name {
+        margin-top: 18%;
+    }
+
+    /* Footer */
+
+    .footer .footer__btn, 
+    .footer .footer-form__control {
+        border-radius: 25px;
+    }
+
+    .footer .footer__btn {
+        margin-top: 15px;
+    }
+}
